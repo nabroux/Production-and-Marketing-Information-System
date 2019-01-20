@@ -1,1 +1,0 @@
-web: gunicorn --pythonpath philasofa philasofa.wsgi
