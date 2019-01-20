@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+
+<title>PS_搜尋訂單  </title>
+		<link rel=stylesheet type="text/css" href="search_customer.css">  <!-- 可刪 -->
+        <link rel="stylesheet" href="{% static 'CRM/search_customer.css' %}" />
+
+</head>
+<body>
+<div class="dc">P．S</div>
+<div class="namecard">
+  <h1>費拉沙發</h1>
+  <h3>Phila Sofa</h3>
+  <hr>
+  <section>
+      <h2>輸入訂單編號</h2>
+      <form method='get' action=''> 
+        <input  type='number'  id='o_no' name='o_no'>
+        <button type='submit'>OK</button>
+      </form>
+  </section>
+
+<table id="t01">
+  <tr>
+      <th>訂單編號</th>
+      <th>日期</th>
+      <th>產品</th>
+      <th>數量</th>
+      <th>顧客</th>
+  </tr>
+
+{% for order in res %}
+      <tr>
+          <td>{{order.order_No}}  </td>  
+          <td>{{order.created_time}}  </td>
+          <td>{{order.product}}  </td>
+          <td>{{order.quantity}}  </td>
+          <td>{{order.customer_name}}  </td>
+        <br>
+      </tr>
+{% endfor %}
+</table>
+
+
+<hr>
+<button class="but CRM mid"onclick="location.href='../'">回上一頁</button>
+
+</div>
+</body>
+</html>

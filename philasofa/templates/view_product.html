@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+
+<html>
+<head>
+
+<title>PS_存貨資料分析</title>
+<link rel="stylesheet" href="{% static 'OM/view_product.css' %}" />
+</head>
+<body>
+<div class="dc">P．S</div>
+<div class="namecard">
+  <h1>費拉沙發</h1>
+  <h3>Phila Sofa</h3>
+ <br>
+  <a href="#t01">存貨列表</a>
+  <a href="#percent">ROP ＆ EOQ</a>
+  <a href="#city">需求預測</a>
+  <hr>
+  <table id="t01">
+    <caption>存貨列表</caption>
+      
+      <tr>
+        <th>產品名稱</th>
+        <th>進貨價</th>
+        <th>進貨成本</th>
+        <th>持貨成本</th>
+        <th>售價</th>
+        <th>存貨數量</th>
+        <th>進貨天數</th>
+
+      </tr>
+      {% for product in products %}
+      <tr>
+            <td>{{product.product_name}}  </td>
+            <td>{{product.purchase_price}}  </td>
+            <td>{{product.order_cost}}  </td>
+            <td>{{product.holding_cost}}  </td>
+            <td>{{product.selling_price}}  </td>
+            <td>{{product.inventory_quantity}}  </td>
+            <td>{{product.order_time}}  </td>
+        
+      </tr>
+      {% endfor %}
+     
+  </table><hr>
+
+  <h2 id="percent">ROP ＆ EOQ</h2>
+  {{ROP_string}}
+  <br>
+  {{EOQ_string}}
+  <br>
+  <br>
+
+  <hr>
+  <h2 id="city">需求預測</h2>
+  <br>
+  <br>
+  {{demand_string|safe}}
+
+  <hr>
+  
+  <button class="but CRM mid" onclick="location.href='../'">回上一頁</button>
+</div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+*{
+  font-family:微軟正黑體;
+}
+
+html,body{  
+  width:100%;height:100%;
+  
+  margin:0px;
+  padding:0px;
+  overflow:auto;
+}
+body{
+  background-color:#F7ECBE;
+  
+  border-top:solid 20px #26C6DA;
+  border-bottom:solid 20px #26C6DA;
+  box-sizing:border-box;
+ 
+}
+.dc{
+  position:absolute;
+  left:10%;
+  bottom:10%;
+  letter-spacing:1px;
+  font-size:550px;
+  color:rgba(0,0,0,0.06)
+}
+.namecard{
+  width:900px;height:auto;
+  position:relative;
+  margin-top:5%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+
+}
+.namecard h1{
+  font-size:120px;
+  letter-spacing:50px;
+  font-weight:550;
+  
+  margin-top:0%;
+  margin-bottom:0%;
+  color:rgba(0,0,0,0.9);
+}
+.namecard h3{
+  font-size:75px;
+  color:rgba(38,198,218,0.8);
+  letter-spacing:15px;
+  margin-top:0.5%;
+  font-weight:600;
+  margin-bottom:8%;
+}
+.but {
+    padding: 25px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 0px 20px;
+    margin-top:-25px;
+    margin-bottom:3%;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius:100px;
+    letter-spacing:12px;
+    font-weight:600;
+    font-size:24px;
+}
+
+.CRM{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #B36710;
+}
+
+.CRM:hover {
+    background-color: #B36710;
+    color: white;
+}
+
+

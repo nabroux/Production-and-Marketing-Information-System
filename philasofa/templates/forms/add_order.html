@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+<title>PS_提交表單</title>
+
+<link rel="stylesheet" href="{% static 'CRM/crm.css' %}" />
+
+</head>
+<body>
+<div class="dc">P．S</div>
+<div class="namecard">
+
+  <h3>Phila Sofa</h3>
+  
+
+   <h1>New Order</h1>
+        <form method="POST" class="post-form">{% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="save btn btn-default">Save</button>
+            
+        </form>
+<br>
+
+<hr>
+<button class="back page" onclick="location.href='../'">回上一頁</button>
+</div>
+</body>
+</html>

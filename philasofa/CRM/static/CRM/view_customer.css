@@ -1,0 +1,141 @@
+*{
+  font-family:微軟正黑體;
+}
+
+html,body{  
+  width:100%;height:100%;
+  
+  margin:0px;
+  padding:0px;
+  overflow:hidden;
+}
+body{
+  background-color:#F7ECBE;
+  
+  
+  border-top:solid 20px #26C6DA;
+  border-bottom:solid 20px #26C6DA;
+  box-sizing:border-box;
+  
+  overflow:auto;
+}
+.dc{
+  position:absolute;
+  left:10%;
+  bottom:10%;
+  letter-spacing:1px;
+  font-size:550px;
+  color:rgba(0,0,0,0.06)
+}
+.namecard{
+  width:900px;height:auto;
+  position:relative;
+/*   top:50px; */
+  margin-left:auto;
+  margin-right:auto;
+  padding:20px;
+  border-radius:10px;
+  overflow:hidden;
+  
+}
+.namecard h1{
+  font-size:70px;
+  letter-spacing:7px;
+  font-weight:550;
+  margin-top:0%;
+  margin-bottom:0%;
+  color:rgba(0,0,0,0.75);
+}
+.namecard h3{
+  font-size:50px;
+  color:rgba(38,198,218,0.6);
+  letter-spacing:5px;
+  margin-top:0.5%;
+  margin-bottom:5px;
+  font-weight:600;
+}
+.but {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 16px 16px;
+    text-align: center;
+    text-decoration: none;
+    display:flex ;
+    font-size: 20px;
+    letter-spacing:2px;
+    margin: 0px auto;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius:100px;
+}
+.CRM{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #2B4C6E;
+    
+}
+
+.CRM:hover {
+    background-color: #2B4C6E;
+    color: white;
+}
+
+table,td,th{ 
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding:10px;
+  
+  /*置中*/
+  margin:0px auto;
+  
+}
+table#t01 tr:nth-child(odd) {
+  background-color: #D4D4D4;
+}
+table#t01 tr:nth-child(even) {
+ background-color: #fff;
+}
+table#t01 th {
+  background-color: #F2410A;
+  color: white;
+  font-size:17px;
+  font-weight:50;
+}
+
+caption{
+  margin-bottom:10px;
+  font-size:25px;
+  font-weight:500;
+  letter-spacing:12px;
+}
+h2{
+  font-size:25px;
+  letter-spacing:2px;
+  text-align:center;
+  font-weight:500;
+}
+a{
+ 
+  font-size:23px;
+  margin-right:24px;
+}
+a:link{
+   color:#33632B;
+}
+ a:hover{
+  color:#09AB54;
+}
+
+h5{
+  font-size:20px;
+  text-align:center;
+  letter-spacing:2px;
+  margin-bottom:-1%;
+  
+}
+h6{
+  font-size:18px;
+  letter-spacing:1px;
+}
