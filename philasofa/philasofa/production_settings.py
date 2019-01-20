@@ -1,7 +1,8 @@
 # Import all default settings.
 from .settings import *
-
+import django_heroku
 import dj_database_url
+
 DATABASES = {
     'default': dj_database_url.config(),
 }
