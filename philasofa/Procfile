@@ -1,1 +1,1 @@
-web: gunicorn philasofa.wsgi
+web: python philasofa/manage.py runserver "0.0.0.0:$PORT
